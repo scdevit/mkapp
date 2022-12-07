@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Mau kenalan? cek IG gue cari sendiri
           <code className={styles.code}>pages/index.tsx</code>
         </p>
 
