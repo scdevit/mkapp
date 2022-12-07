@@ -17,5 +17,6 @@ jobs:
             port: 22
             script: | 
                 cd /var/www/html/mkapp 
-                git pull origin master    
-                pm2 start
+                git pull origin master   
+                pm2 delete mkapp
+                pm2 start yarn --name "mkapp" --interpreter bash -- start  
