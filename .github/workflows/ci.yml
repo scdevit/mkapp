@@ -1,0 +1,27 @@
+name: ci
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs: 
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout 
+        uses: actions/checkout@master
+
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16
+          check-latest: true   
+          
+      - name: install dependencies
+        run: yarn  
+
+      - name: run linter
+        run: yarn lint   
+  
