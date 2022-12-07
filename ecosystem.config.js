@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name : "mkapp",
-    script: "nvm use 16 && npm run build && npm run start"
+    script: "nvm install 16 && nvm use 16 && npm run build && npm run start"
   }]
 }
 
