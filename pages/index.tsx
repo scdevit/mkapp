@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Mau kenalan? csss ek IG gue cari sendiri
+          Loe Mau kenalan? csss ek IG gue cari sendiri
           <code className={styles.code}>pages/index.tsx</code>
         </p>
 
